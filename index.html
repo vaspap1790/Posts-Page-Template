@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PostsPage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <div class="container d-flex justify-content-center" id="mainPostContainer">
+
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex row mt-2 mb-2 align-items-center">
+                    <div class="col-1  pr-1">
+                        <img src="https://img6.androidappsapk.co/300/7/3/a/com.profile.admires_stalkers_unknown.png"
+                            class="rounded-circle rounded-circle" id="profilePicture">
+                    </div>
+                    <div class="col-11">
+
+                        <div><strong> {{username}} 's trip: {{title}}</strong></div>
+                        <div><small> {{timestamp}}</small></div>
+                    </div>
+                </div>
+                <div class="d-flex row mt-2 mb-2 px-1">
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatum id
+                        ipsa doloremque.</p>
+                </div>
+
+                <div class="row mt-2 mb-2">
+
+                    <img src="https://cdn.blueswandaily.com//2018/11/Travel000-2000x1200.jpg" id="mainPicture" alt=""
+                        srcset="">
+                </div>
+                <div class="row mt-1 d-flex justify-content-between align-items-center px-2">
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/2065/2065064.svg" style="width:30px;" alt="">
+                        {{numOfLikes}}
+                    </div>
+                    <p>{{numOfComments}} Comments</p>
+                </div>
+
+                <div class="row d-flex justify-content-around align-items-center">
+
+                    <hr
+                        style="width: 96%; color:rgba(99, 99, 99, 0.05); height: 0.05px; background-color:rgba(99, 99, 99, 0.05);" />
+
+                    <a href="#" class="btn btn-basic"><i class="far fa-thumbs-up"></i> Like</a>
+                    <a href="#" class="btn btn-basic"><i class="far fa-comments"></i> Comment</a>
+                    <a href="#" class="btn btn-basic"><i class="fas fa-share-alt"></i> Share</a>
+
+                    <hr
+                        style="width: 96%; color:rgba(99, 99, 99, 0.05); height: 0.05px; background-color:rgba(99, 99, 99, 0.05);" />
+
+                </div>
+
+                <div class="row d-flex justify-content-center">
+
+                    <form style="width:96%" action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Write a comment...">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <scripts>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="custom.js"></script>
+
+    </scripts>
+
+</body>
+
+</html>
